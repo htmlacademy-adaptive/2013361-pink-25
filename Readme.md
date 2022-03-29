@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Роман Старусев](https://up.htmlacademy.ru/adaptive/25/user/2013361).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
