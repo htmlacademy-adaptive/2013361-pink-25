@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>PINK:Фото</title>
   </head>
   <body class="page__body">
 
@@ -17,7 +17,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__item-link">
+              <a class="site-list__item-link" href="index.html">
                 Главная
               </a>
             </li>
@@ -46,204 +46,171 @@
       <h1 class="visually-hidden">
         Официальный сайт фотоприложения PINK
       </h1>
-      <h2 class="visually-hidden">
-        Описание фотоприложения PINK
-      </h2>
-
-      <article class="download-app">
-        <div class="download-app__wrapper">
-            <h2 class="visually-hidden">
-              Загрузите приложение PINK!
+      <section class="catalog-title">
+        <div class="catalog-title__wrapper">
+          <div class="catalog-title__foto-user-wrapper">
+            <h2 class="catalog-title__foto-user-title">
+              Фотографии пользователей
             </h2>
-          <p class="download-app__intro">
-            Взгляните на жизнь иначе!
+          </div>
+          <p class="catalog-title__description-catalog">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
-        </div>
-        <a class="download-app__link" href="#" download>
-          Скачать приложение
-        </a>
-        <div class="download-app__platforms platforms">
-          <ul class="platforms__list">
-            <li class="platforms__item">
-              <a class="platforms__link" href="#">
-                <img src="img/platforms/apple-logo.svg" width="47" height="56" alt="Скачать приложение для Apple">
-              </a>
-            </li>
-            <li class="platforms__item">
-              <a class="platforms__link" href="#">
-                <img src="img/platforms/android-logo.svg" width="43" height="47" alt="Скачать приложение для Android">
-              </a>
-            </li>
-            <li class="platforms__item">
-              <a class="platforms__link" href="#">
-                <img src="img/platforms/microsoft-logo.svg" width="44" height="41" alt="Скачать приложение для Microsoft">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p class="download-app__available">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </article>
-
-      <section class="description-app">
-          <h2 class="visually-hidden">
-            Почему Вам стоит скачать фотоприложение PINK?
-          </h2>
-        <div class="description-app__wrapper">
-          <p class="description-app__intro">
-            Устали от серости мегаполиса?
-          </p>
-          <p class="description-app__intro">
-            Нам есть, что вам предложить!
-          </p>
-          <ul class="description-app__list">
-            <li class="description-app__item">
-              <p class="description-app__advantage">
-                Поднимает настроение
-              </p>
-              <p class="description-app__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="description-app__item">
-              <p class="description-app__advantage">
-                Меняет мир вокруг
-              </p>
-              <p class="description-app__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!
-              </p>
-            </li>
-            <li class="description-app__item">
-              <p class="description-app__advantage">
-                Заводит новых друзей
-              </p>
-              <p class="description-app__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых!
-              </p>
-            </li>
-          </ul>
-          <img class="description-app__image" src="img/description-app/iphone-mobile.png" width="157" height="320" alt="Возможности приложения">
         </div>
       </section>
 
-      <section class="effect">
-        <div class="effect__wrapper">
-          <h3 class="effect__title">
-            Эффект на 24 часа!
-          </h3>
-          <p class="effect__description">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a class="effect__link" href="#">
-            Узнать больше об исследовании
-          </a>
+      <section class="users-publication">
+        <h2 class="visually-hidden">Публикации пользователей</h2>
+        <div class="users-publication__wrapper">
+          <ul class="users-publication__list">
+            <li class="users-publication__item users-publication__item--panorama-of-day">
+              <img class="users-publication__image" src="img/users-publication/photo-bridge-mobile.jpg" width="280" height="180" alt="Фото моста">
+              <p class="users-publication__autor">
+                Анна <span class="users-publication__autor-time">(5 минут назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 215
+              </p>
+            </li>
+            <li class="users-publication__item">
+              <img class="users-publication__image" src="img/users-publication/photo-car-mobile.jpg" width="280" height="180" alt="Фото авто">
+              <p class="users-publication__autor">
+                Левон <span class="users-publication__autor-time">(5 часов назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 356
+              </p>
+            </li>
+            <li class="users-publication__item">
+              <img class="users-publication__image" src="img/users-publication/photo-drums-mobile.jpg" width="280" height="180" alt="Фото барабанной установки">
+              <p class="users-publication__autor">
+                Антон <span class="users-publication__autor-time">(12 часов назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Соседи будут рады!
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 666
+              </p>
+            </li>
+            <li class="users-publication__item">
+              <img class="users-publication__image" src="img/users-publication/photo-windows-mobile.jpg" width="280" height="180" alt="Фото витражных окон">
+              <p class="users-publication__autor">
+                Борис <span class="users-publication__autor-time">(20 часов назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 215
+              </p>
+            </li>
+            <li class="users-publication__item">
+              <img class="users-publication__image" src="img/users-publication/photo-market-mobile.jpg" width="280" height="180" alt="Фото ярмарки">
+              <p class="users-publication__autor">
+                Сергей <span class="users-publication__autor-time">(25 часов назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Самая кубанская в мире!
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 4
+              </p>
+            </li>
+            <li class="users-publication__item">
+              <img class="users-publication__image" src="img/users-publication/photo-mountain-mobile.jpg" width="280" height="180" alt="Фото с горы">
+              <p class="users-publication__autor">
+                Максим <span class="users-publication__autor-time">(40 часов назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Где снег-то?
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 150
+              </p>
+            </li>
+            <li class="users-publication__item">
+              <img class="users-publication__image" src="img/users-publication/photo-wing-mobile.jpg" width="280" height="180" alt="Крыло самолета">
+              <p class="users-publication__autor">
+                Надежда <span class="users-publication__autor-time">(45 часов назад)</span>
+              </p>
+              <p class="users-publication__publication-description">
+                Всем GM и взаимные лайки!
+              </p>
+              <p class="users-publication__publication-likes">
+                Нравится: 2560
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-            <h2 class="visually-hidden">
-              Отзывы о приложении
-            </h2>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <p class="reviews__autor">
-                Николай Петров
-              </p>
-              <span class="reviews__legend">25 лет, водитель трамвая</span>
-              <q class="reviews__comment">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </q>
-            </li>
-            <li class="reviews__item slider__item">
-              <p class="reviews__autor">
-                Варвара Богданова
-              </p>
-              <span class="reviews__legend">27 лет, фотограф</span>
-              <q class="reviews__comment">
-                Лучший редактор для мобильной фотографии! Здесь Вы найдете уникальную коллекцию фильтров для создания атмосферных фото! Проявите свою индивидуальность с PINK!
-              </q>
-            </li>
-            <li class="reviews__item slider__item">
-              <p class="reviews__autor">
-                Алексей Кириенко
-              </p>
-              <span class="reviews__legend">20 лет, фитнес тренер</span>
-              <q class="reviews__comment">
-                Хотите уметь профессионально обрабатывать снимки для соц. сетей? Простое приложение PINK придаст настроения Вашим фотографиям!
-              </q>
-            </li>
-          </ul>
-          <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+      <section class="edit-publication">
+        <h2 class="visually-hidden">Редактирование фото</h2>
+        <div class="edit-publication__wrapper">
+          <p class="edit-publication__intro">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <img class="edit-publication__image" src="img/edit-publication/photo-editor-mobile.jpg" width="280" height="374" alt="Ваше фото для редактиолвания">
+          <div class="edit-publication__editor">
+            <ul class="edit-publication__img-list">
+              <li class="edit-publication__img-item">
+                <button class="edit-publication__img-button edit-publication__img-button--current" type="button">
+                  <span class="visually-hidden">Обрезать</span>
+                </button>
+              </li>
+              <li class="edit-publication__img-item">
+                <button class="edit-publication__img-button" type="button">
+                  <span class="visually-hidden">Заливка</span>
+                </button>
+              </li>
+              <li class="edit-publication__img-item">
+                <button class="edit-publication__img-button" type="button">
+                  <span class="visually-hidden">Контраст</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="edit-publication__range-wrapper">
+            <ul class="edit-publication__range-list">
+              <li class="edit-publication__range-item">
+                <div class="edit-publication__range-scale">
+                  <div class="edit-publication__range-bar">
+                    <button class="edit-publication__range-togle">
+                      <span class="visually-hidden">Изменить обрезку</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="edit-publication__range-item">
+                <div class="edit-publication__range-scale">
+                  <div class="edit-publication__range-bar">
+                    <button class="edit-publication__range-togle">
+                      <span class="visually-hidden">Изменить заливку</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="edit-publication__range-item">
+                <div class="edit-publication__range-scale">
+                  <div class="edit-publication__range-bar">
+                    <button class="edit-publication__range-togle">
+                      <span class="visually-hidden">Изменить контраст</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-
-      <section class="price-page">
-        <div class="price-page__wrapper">
-            <h3 class="visually-hidden">
-              Прайс-лист приложения
-            </h3>
-          <table class="price">
-            <tr>
-              <th></th>
-              <th class="price__table-header">
-                <p class="price__name">База</p>
-                <p class="price__price">1,99 USD</p>
-              </th>
-              <th class="price__table-header price__table-header--hit">
-                <p class="price__name">Стандарт</p>
-                <p class="price__price">3,99 USD</p>
-              </th>
-              <th class="price__table-header">
-                <p class="price__name">Анлим</p>
-                <p class="price__price">9,99 USD</p>
-              </th>
-            </tr>
-            <tr>
-              <td class="price__option">Розовый фильтр</td>
-              <td class="price__option price__option--on"></td>
-              <td class="price__option price__option--on"></td>
-              <td class="price__option price__option--on"></td>
-            </tr>
-            <tr>
-              <td class="price__option">Смайлики</td>
-              <td class="price__option price__option--off"></td>
-              <td class="price__option price__option--on"></td>
-              <td class="price__option price__option--on"></td>
-            </tr>
-            <tr>
-              <td class="price__option">Комментарии</td>
-              <td class="price__option price__option--off"></td>
-              <td class="price__option price__option--off"></td>
-              <td class="price__option price__option--on"></td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__wrapper">
-            <h2 class="visually-hidden">
-              Наши контакты
-            </h2>
-          <p class="contacts__questions">
-            Остались вопросы? Свяжитесь с нами!
-          </p>
-          <dl>
-            <dt class="contacts__title">Звоните:</dt>
-            <dd><a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
-            <dt class="contacts__title">Пишите:</dt>
-            <dd><a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
-            <dt class="contacts__title">Приезжайте в гости:</dt>
-            <dd class="contacts__address">ул. Большая Конюшенная, 19/8</dd>
-          </dl>
-          <img class="contacts__map" src="img/contacts/mobile-map.png" width="320" height="200" alt="Наше местоположение на карте">
-        </div>
+        <button class="edit-publication__button" type="button">Запостить</button>
+        <button class="edit-publication__button edit-publication__button--reset" type="reset">Отмена</button>
       </section>
 
     </main>
