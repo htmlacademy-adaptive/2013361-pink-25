@@ -9,23 +9,18 @@
 
 .price__table {
   border-collapse: collapse;
+}
 
-  td {
-    border: 2px solid @backgroundColorLightGray;
-    background-color: @backgroundColorWhite;
-  }
+.price__table-header:not(:last-child) {
+  border-right: 2px solid @backgroundColorWhite;
+}
 
-  th:not(:last-child) {
-    border-right: 2px solid @backgroundColorWhite;
-  }
+.price__table-header:nth-child(2) {
+  border-radius: 1px 0 0 0;
+}
 
-  th:nth-child(2) {
-    border-radius: 1px 0 0 0;
-  }
-
-  th:last-child {
-    border-radius: 0 1px 0 0;
-  }
+.price__table-header:last-child {
+  border-radius: 0 1px 0 0;
 }
 
 .price__table-header {
@@ -69,6 +64,8 @@
   font-weight: 400;
   font-size: 14px;
   color: @textColorDark;
+  border: 2px solid @backgroundColorLightGray;
+  background-color: @backgroundColorWhite;
 }
 
 .price__option--on {
