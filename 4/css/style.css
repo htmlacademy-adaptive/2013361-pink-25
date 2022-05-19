@@ -46,7 +46,7 @@ body {
   padding: 0;
   list-style-type: none;
 }
-.site-list__item a {
+.site-list__item-link {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -55,7 +55,6 @@ body {
   text-decoration: none;
 }
 .download-app {
-  margin: 0;
   background-color: #1d2631;
   background-image: url("../../img/download-app/back-mobile.png");
   background-repeat: no-repeat;
@@ -205,17 +204,13 @@ body {
 .price__table {
   border-collapse: collapse;
 }
-.price__table td {
-  border: 2px solid #e5e5e5;
-  background-color: #ffffff;
-}
-.price__table th:not(:last-child) {
+.price__table-header:not(:last-child) {
   border-right: 2px solid #ffffff;
 }
-.price__table th:nth-child(2) {
+.price__table-header:nth-child(2) {
   border-radius: 1px 0 0 0;
 }
-.price__table th:last-child {
+.price__table-header:last-child {
   border-radius: 0 1px 0 0;
 }
 .price__table-header {
@@ -255,6 +250,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #283645;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
 }
 .price__option--on {
   background-image: url("../../img/price/yes.svg");
@@ -306,6 +303,9 @@ body {
   width: 320px;
   margin: 0 auto;
 }
+.contacts-page {
+  margin: 0;
+}
 .main-footer__wrapper {
   background-color: #ffffff;
   width: 280px;
@@ -322,6 +322,21 @@ body {
   padding: 0;
   list-style-type: none;
   margin-bottom: 38px;
+}
+.page__download-page {
+  margin: 0;
+}
+.page__form-emotions {
+  margin: 0;
+}
+.page__form-name {
+  margin: 0;
+}
+.page__form-platform {
+  margin: 0;
+}
+.page__users-publication {
+  margin: 0 auto;
 }
 .form-title__wrapper {
   width: 280px;
@@ -352,12 +367,15 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-.form-title__description-form--add {
+.form-title__description-form-add {
   display: none;
 }
 .content-form__wrapper {
   width: 280px;
   margin: 0 auto;
+}
+.content-form__achievements {
+  margin: 0;
 }
 .content-form__footnote {
   line-height: 30px;
@@ -384,8 +402,14 @@ body {
   border: 2px solid #2aab6d;
   border-radius: 1px;
 }
+.content-form__submit {
+  width: 280px;
+  margin: 0 auto;
+}
+.content-form__footnote-add {
+  display: none;
+}
 .form-name {
-  margin: 0;
   padding: 0;
   border: none;
 }
@@ -413,7 +437,6 @@ body {
   width: 100%;
 }
 .form-achievements {
-  margin: 0;
   padding: 0;
   border: none;
   background-color: #f2f2f2;
@@ -465,43 +488,7 @@ body {
   height: 16px;
   background-image: url("../../img/form-achievements/tick.svg");
 }
-.form-platform__label {
-  position: relative;
-}
-.form-platform__input-description {
-  padding-left: 70px;
-}
-.form-platform__input-mark {
-  position: absolute;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
-  border: 2px solid #e5e5e5;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-.form-platform__input[type="radio"]:checked + .form-platform__input-mark::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 11px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #d22856;
-}
-.form-platform__item {
-  margin-bottom: 36px;
-}
-.content-form__submit {
-  width: 280px;
-  margin: 0 auto;
-}
-.content-form__footnote--add {
-  display: none;
-}
 .form-contacts {
-  margin: 0;
   padding: 0;
   border: none;
 }
@@ -535,12 +522,11 @@ body {
   width: 100%;
 }
 .form-platform {
-  margin: 0;
   padding: 0;
   border: none;
   background-color: #f2f2f2;
 }
-.form-platform_wrapper {
+.form-platform__wrapper {
   width: 280px;
   margin: 0 auto;
 }
@@ -561,9 +547,34 @@ body {
 .form-platform__label {
   line-height: 30px;
   font-size: 18px;
+  position: relative;
+}
+.form-platform__input-description {
+  padding-left: 70px;
+}
+.form-platform__input-mark {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.form-platform__input[type="radio"]:checked + .form-platform__input-mark::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+.form-platform__item {
+  margin-bottom: 36px;
 }
 .form-emotions {
-  margin: 0;
   padding: 0;
   border: none;
 }
@@ -589,13 +600,13 @@ body {
   min-height: 197px;
   border: 2px solid #e5e5e5;
 }
-.catalog-title__foto-user-wrapper {
+.catalog-title__photo-user-wrapper {
   background-color: #1d2631;
   background-image: url("../../img/download-app/back-mobile.png");
   background-repeat: no-repeat;
   background-position: center  top;
 }
-.catalog-title__foto-user-title {
+.catalog-title__photo-user-title {
   margin: 0 auto;
   color: #ffffff;
   font-weight: 300;
@@ -614,15 +625,14 @@ body {
   margin-top: 54px;
   margin-bottom: 60px;
 }
+.users-publication {
+  width: 320px;
+  display: block;
+}
 .users-publication__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-.users-publication {
-  width: 320px;
-  display: block;
-  margin: 0 auto;
 }
 .users-publication__image {
   width: 320px;
@@ -708,7 +718,7 @@ body {
 .edit-publication__img-item:not(:last-child) {
   margin-right: 35px;
 }
-.edit-publication__img-button-crop {
+.edit-publication__img-button__crop {
   padding: 0;
   margin: 0;
   border: none;
@@ -718,7 +728,7 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-.edit-publication__img-button-crop::before {
+.edit-publication__img-button__crop::before {
   content: "";
   position: absolute;
   width: 44px;
@@ -729,7 +739,7 @@ body {
   background-image: url("../../img/edit-publication/crop.svg");
   background-repeat: no-repeat;
 }
-.edit-publication__img-button-fill {
+.edit-publication__img-button__fill {
   padding: 0;
   margin: 0;
   border: none;
@@ -739,7 +749,7 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-.edit-publication__img-button-fill::before {
+.edit-publication__img-button__fill::before {
   content: "";
   position: absolute;
   width: 48px;
@@ -750,7 +760,7 @@ body {
   background-image: url("../../img/edit-publication/fill.svg");
   background-repeat: no-repeat;
 }
-.edit-publication__img-button-contrast {
+.edit-publication__img-button__contrast {
   padding: 0;
   margin: 0;
   border: none;
@@ -760,7 +770,7 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-.edit-publication__img-button-contrast::before {
+.edit-publication__img-button__contrast::before {
   content: "";
   position: absolute;
   width: 32px;
