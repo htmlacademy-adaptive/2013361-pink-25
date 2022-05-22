@@ -1,0 +1,80 @@
+.users-publication {
+  width: 320px;
+  display: block;
+}
+
+.users-publication__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.users-publication__image {
+  width: 320px;
+}
+
+.users-publication__item--panorama-of-day {
+  width: 320px;
+}
+
+.users-publication__wrapper {
+  background-color: @backgroundColorDarkWhite;
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-top: 25px;
+}
+
+.users-publication__autor {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.users-publication__autor-time {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.users-publication__publication-description {
+  margin: 0;
+  margin-bottom: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.users-publication__publication-likes {
+  margin: 0;
+}
+
+.users-publication__likes-img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  width: 13px;
+  height: 12px;
+  margin-right: 18px;
+}
+
+.users-publication__likes-img::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/users-publication/heart.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 12px;
+}
+
+.users-publication__likes {
+  color: @textColorRed;
+  font-size: 12px;
+}

@@ -1,0 +1,61 @@
+.form-platform {
+  padding: 0;
+  border: none;
+  background-color: @backgroundColorDarkWhite;
+}
+
+.form-platform__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-platform__legend {
+  color: @textColorRed;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+
+.form-platform__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 42px;
+}
+
+.form-platform__label {
+  line-height: 30px;
+  font-size: 18px;
+  position: relative;
+}
+
+.form-platform__input-description {
+  padding-left: 70px;
+}
+
+.form-platform__input-mark {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid @backgroundColorLightGray;
+  background-color: @backgroundColorWhite;
+  cursor: pointer;
+}
+
+.form-platform__input[type="radio"]:checked + .form-platform__input-mark::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: @textColorRed;
+}
+
+.form-platform__item {
+  margin-bottom: 36px;
+}
